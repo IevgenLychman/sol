@@ -1,8 +1,9 @@
 import { Suspense, Fragment } from 'react';
 import { Routes } from 'react-router-dom';
-import Header from '../../shared/components/Header/Header';
-import Loader from '../../shared/components/Loader/Loader';
-import Container from '../../shared/components/Container/Container';
+import Header from 'components/Header/Header';
+import Footer from 'components/Footer/Footer';
+// import Loader from '../../shared/components/Loader/Loader';
+// import Container from 'components/Container/Container';
 
 const SharedLayout = ({ children }) => {
   return (
@@ -11,16 +12,14 @@ const SharedLayout = ({ children }) => {
         <Header />
       </header>
       <main>
-        <Suspense
-          fallback={
-            <Container>
-              <Loader />
-            </Container>
-          }
-        >
+        {/* <Suspense fallback={<Container><Loader /></Container>}> */}
+        <Suspense>
           <Routes>{children}</Routes>
         </Suspense>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </Fragment>
   );
 };

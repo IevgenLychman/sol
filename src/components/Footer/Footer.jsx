@@ -4,16 +4,12 @@
 // import MobileMenu from '../MobileMenu/MobileMenu';
 import Container from '../Container/Container';
 
-import Logo from 'components/Logo/Logo';
-
-const Header = () => {
+const Footer = () => {
   return (
     <Container>
-      <div>
-        <Logo />
-      </div>
+      <p>Привет</p>
     </Container>
   );
 };
 
-export default Header;
+export default Footer;

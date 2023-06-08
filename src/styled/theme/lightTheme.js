@@ -8,11 +8,11 @@ const lightTheme = {
   space: [0, 2, 4, 8, 16, 32, 64],
   fonts: {
     main: {
-      regular: 'Manrope-Regular',
-      medium: 'Manrope-Medium',
-      semiBold: 'Manrope-SemiBold',
-      bold: 'Manrope-Bold',
-      extraBold: 'Manrope-ExtraBold',
+      regular: 'NotoSans-Regular',
+      medium: 'NotoSans-Medium',
+      semiBold: 'NotoSans-SemiBold',
+      bold: 'NotoSans-Bold',
+      extraBold: 'NotoSans-ExtraBold',
     },
     secondary: { regular: 'Inter-Regular', medium: 'Inter-Medium' },
   },
