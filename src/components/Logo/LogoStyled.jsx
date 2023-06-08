@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
-export const LogoWraper = styled.img`
-  background-color: yellow;
+export const LogoWraper = styled.div`
   transition: transform ${({ theme }) => theme.duration.main}
     ${({ theme }) => theme.transition.main};
 
@@ -10,6 +9,6 @@ export const LogoWraper = styled.img`
     transform: scale(1.1);
   }
   & svg {
-    stroke: black;
+    fill: black;
   }
 `;

@@ -1,19 +1,20 @@
-const LogoImg = () => {
+import React from 'react';
+
+function LogoIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="444"
-      height="384"
+      width="115"
+      height="40"
       fill="none"
+      viewBox="0 0 115 40"
     >
       <path
-        d="m222 0 221.703 384H.297l13.857-24 13.856-24 6.928-12L222 321.375V264l-151.388.25L85.5 240.5l12.824-24.25L222 216v-48h-96.995l13.857-24 13.856-24H222V72h-41.569l13.856-24L222 0Z"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+        fill="#000"
+        d="M57.5 0L115 40H0l3.594-2.5L7.188 35l1.796-1.25 48.516-.273V27.5l-39.264.026 3.862-2.474 3.326-2.526L57.5 22.5v-5H32.344l3.593-2.5 3.594-2.5H57.5v-5H46.719L50.312 5 57.5 0z"
+      ></path>
     </svg>
   );
-};
+}
 
-export default LogoImg;
+export default LogoIcon;

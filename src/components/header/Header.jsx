@@ -9,9 +9,7 @@ import Logo from 'components/Logo/Logo';
 const Header = () => {
   return (
     <Container>
-      <div>
-        <Logo />
-      </div>
+      <Logo></Logo>
     </Container>
   );
 };
