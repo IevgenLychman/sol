@@ -1,4 +1,6 @@
-const LogoImg = () => {
+import React from 'react';
+
+function LogoIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -13,6 +15,6 @@ const LogoImg = () => {
       ></path>
     </svg>
   );
-};
+}
 
-export default LogoImg;
+export default LogoIcon;
