@@ -1,8 +1,10 @@
 import styled from '@emotion/styled';
 
 export const LogoWraper = styled.div`
-  border-radius: 50%;
-  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
   transition: transform ${({ theme }) => theme.duration.main}
     ${({ theme }) => theme.transition.main};
 
@@ -13,5 +15,7 @@ export const LogoWraper = styled.div`
   & svg {
     stroke: black;
     fill: black;
+    width: 45px;
+    height: 45px;
   }
 `;

@@ -5,11 +5,7 @@
 import Container from '../Container/Container';
 
 const Footer = () => {
-  return (
-    <Container>
-      <p>Привет</p>
-    </Container>
-  );
+  return <Container></Container>;
 };
 
 export default Footer;
