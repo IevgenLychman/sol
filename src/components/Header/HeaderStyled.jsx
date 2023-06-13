@@ -10,11 +10,20 @@ export const HeaderWrapper = styled.div`
     content: '';
     z-index: -1;
     width: 0;
-    height: 0;
+    height: 75px;
     border: 0 solid transparent;
-    border-left-width: 0px;
-    border-right-width: 1248px;
-    border-top: 109px solid #ffff0040;
+    border-left-width: 440px;
+    border-right-width: 0px;
+    border-top: 30px solid #ffd400;
+
+    @media screen and (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+      border-left-width: 738px;
+      border-top: 40px solid #ffd400;
+    }
+
+    @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+      border-left-width: 1250px;
+    }
   }
 `;
 
@@ -28,31 +37,81 @@ export const HeaderText = styled.div`
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  margin-left: 20px;
 `;
 
 export const HeaderTitle = styled.div`
   font-family: ${({ theme }) => theme.fonts.main.medium};
-  font-size: ${({ theme }) => theme.fontSizes[5]};
-  line-height: 1.38;
-  letter-spacing: 0.04em;
-`;
-
-export const HeaderSubtitle = styled.div`
-  font-family: ${({ theme }) => theme.fonts.main.medium};
   font-size: ${({ theme }) => theme.fontSizes[3]};
   line-height: 1.38;
   letter-spacing: 0.04em;
+
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: ${({ theme }) => theme.fontSizes[4]};
+  }
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    font-size: ${({ theme }) => theme.fontSizes[5]};
+  }
+`;
+
+export const HeaderSubtitle = styled.div`
+  font-family: ${({ theme }) => theme.fonts.main.regular};
+  font-size: ${({ theme }) => theme.fontSizes[2]};
+  line-height: 1.38;
+  letter-spacing: 0.04em;
+  border-left: 2px solid black;
+  padding-left: 10px;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: ${({ theme }) => theme.fontSizes[3]};
+  }
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    font-size: ${({ theme }) => theme.fontSizes[4]};
+  }
 `;
 
 export const HeaderContacts = styled.ul`
-  display: flex;
+  display: none;
 
-  text-decoration: none;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 `;
 
 export const HeaderList = styled.li`
   display: flex;
-  align-items: center;
-  text-decoration: none;
+`;
+
+export const HeaderListText = styled.a`
+  transition: transform ${({ theme }) => theme.duration.main}
+    ${({ theme }) => theme.transition.main};
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
+  & svg {
+    margin-right: 10px;
+  }
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    text-decoration: none;
+    color: inherit;
+    font-family: ${({ theme }) => theme.fonts.main.medium};
+    font-size: ${({ theme }) => theme.fontSizes[2]};
+    line-height: 1.38;
+  }
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    font-family: ${({ theme }) => theme.fonts.main.medium};
+    font-size: ${({ theme }) => theme.fontSizes[3]};
+  }
 `;

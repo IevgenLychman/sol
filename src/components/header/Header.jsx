@@ -11,6 +11,7 @@ import {
   HeaderSubtitle,
   HeaderContacts,
   HeaderList,
+  HeaderListText,
 } from './HeaderStyled';
 
 const Header = () => {
@@ -21,7 +22,7 @@ const Header = () => {
           <Logo />
           <HeaderText>
             <HeaderTitle>СОЛОПІХІН О.Л.</HeaderTitle>
-            <HeaderSubtitle>Митний брокер</HeaderSubtitle>
+            <HeaderSubtitle>МИТНИЙ БРОКЕР</HeaderSubtitle>
           </HeaderText>
         </HeaderLogoWrapper>
 
@@ -29,15 +30,15 @@ const Header = () => {
 
         <HeaderContacts>
           <HeaderList>
-            <a href="mailto:info@devstudio.com">
+            <HeaderListText href="mailto:info@devstudio.com">
               <FiMail /> luckybroke@ukr.net
-            </a>
+            </HeaderListText>
           </HeaderList>
           <HeaderList>
-            <a href="tel:+380679515231">
+            <HeaderListText href="tel:+380679515231">
               <FiPhone />
-              +38 097 951 52 31
-            </a>
+              +38 067 951 52 31
+            </HeaderListText>
           </HeaderList>
         </HeaderContacts>
       </HeaderWrapper>

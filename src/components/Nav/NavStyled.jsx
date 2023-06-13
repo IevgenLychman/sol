@@ -2,20 +2,13 @@ import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
 export const NavEl = styled.nav`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    gap: 60px;
-    align-items: center;
-  }
+  display: none;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: flex;
     flex-direction: row;
-    gap: 80px;
     align-items: center;
+    gap: 80px;
   }
 `;
 
@@ -28,15 +21,16 @@ export const Link = styled(NavLink)`
   text-decoration: none;
   font-size: 32px;
   line-height: 1.38;
-  transition: all 250ms;
+
+  transition: transform ${({ theme }) => theme.duration.main}
+    ${({ theme }) => theme.transition.main};
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 
   font-family: ${({ theme }) => theme.fonts.main.medium};
-  font-size: ${({ theme }) => theme.fontSizes[3]};
-
-  &:hover {
-    font-weight: 700;
-    color: ${({ theme }) => theme.colors.yellow};
-  }
+  font-size: ${({ theme }) => theme.fontSizes[2]};
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: ${({ theme }) => theme.fontSizes[3]};
@@ -46,10 +40,5 @@ export const Link = styled(NavLink)`
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     font-size: ${({ theme }) => theme.fontSizes[3]};
     line-height: 1.35;
-
-    &:hover {
-      font-weight: 400;
-      color: ${({ theme }) => theme.colors.yellow};
-    }
   }
 `;

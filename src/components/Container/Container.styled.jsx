@@ -10,12 +10,10 @@ const Wrapper = styled.div`
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     width: ${({ theme }) => theme.breakpoints.tablet};
-    padding: 0 ${({ theme }) => theme.space[5] + 'px'};
   }
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     width: ${({ theme }) => theme.breakpoints.desktop};
-    padding: 0 ${({ theme }) => theme.space[4] + 'px'};
   }
 `;
 

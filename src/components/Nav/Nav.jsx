@@ -6,17 +6,17 @@ const items = [
   {
     id: nanoid(),
     to: '/main',
-    text: 'Послуги',
+    text: 'ПОСЛУГИ',
   },
   {
     id: nanoid(),
     to: '/about',
-    text: 'Про нас',
+    text: 'ПРО НАС',
   },
   {
     id: nanoid(),
     to: '/contacts',
-    text: 'Контакти',
+    text: 'КОНТАКТИ',
   },
 ];
 

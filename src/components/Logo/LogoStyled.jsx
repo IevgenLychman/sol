@@ -15,7 +15,7 @@ export const LogoWraper = styled.div`
   & svg {
     stroke: black;
     fill: black;
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
   }
 `;
