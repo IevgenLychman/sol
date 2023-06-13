@@ -3,12 +3,14 @@
 // import { AuthNav, UserNav, Nav } from '../Nav';
 // import MobileMenu from '../MobileMenu/MobileMenu';
 import Container from '../Container/Container';
-import { FooterWrap } from './FooterStyled';
+import { FooterWrap, FooterCopyRight } from './FooterStyled';
 
 const Footer = () => {
   return (
     <Container>
-      <FooterWrap />
+      <FooterWrap>
+        <FooterCopyRight>2022 &copy; Lychman Ievgen </FooterCopyRight>
+      </FooterWrap>
     </Container>
   );
 };

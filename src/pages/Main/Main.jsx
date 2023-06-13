@@ -3,18 +3,13 @@
 // import { AuthNav, UserNav, Nav } from '../Nav';
 // import MobileMenu from '../MobileMenu/MobileMenu';
 import Container from 'components/Container/Container';
-import { Wrap } from './MainStyled';
+import { Wrap, HeroMainText } from './MainStyled';
 
 const Main = () => {
   return (
     <Container>
       <Wrap>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-          praesentium velit, quo molestias adipisci iste nisi aliquam architecto
-          natus expedita consequatur ipsam perspiciatis quisquam doloremque
-          deserunt ea cumque voluptate minima!
-        </p>
+        <HeroMainText>Швидко Професійно Не за всі гроші світу</HeroMainText>
       </Wrap>
     </Container>
   );
