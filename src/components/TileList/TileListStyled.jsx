@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const ServicesList = styled.ul`
+export const TileListEl = styled.ul`
   color: black;
   font-family: ${({ theme }) => theme.fonts.main.medium};
   font-size: ${({ theme }) => theme.fontSizes[3]};
@@ -12,10 +12,12 @@ export const ServicesList = styled.ul`
   gap: 20px 20px;
 `;
 
-export const ServicesItems = styled.ul`
-  border: 1px solid green;
+export const TileItems = styled.li`
+  padding: 10px;
+  border: 1px solid #ffd400;
   background-color: light-grey;
   border-radius: 5px;
   width: 45%;
   min-height: 200px;
+  box-shadow: ${({ theme }) => theme.boxShadows.main};
 `;

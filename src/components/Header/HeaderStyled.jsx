@@ -42,7 +42,7 @@ export const HeaderText = styled.div`
 `;
 
 export const HeaderTitle = styled.div`
-  font-family: ${({ theme }) => theme.fonts.main.medium};
+  font-family: ${({ theme }) => theme.fonts.main.semiBold};
   font-size: ${({ theme }) => theme.fontSizes[3]};
   line-height: 1.38;
   letter-spacing: 0.04em;

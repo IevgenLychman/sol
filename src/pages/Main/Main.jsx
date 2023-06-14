@@ -3,6 +3,8 @@
 // import { AuthNav, UserNav, Nav } from '../Nav';
 // import MobileMenu from '../MobileMenu/MobileMenu';
 import Container from 'components/Container/Container';
+import TileList from 'components/TileList/TileList';
+
 import {
   MainWrap,
   Hero,
@@ -10,8 +12,10 @@ import {
   HeroSubtitle,
   Services,
   ServicesTitle,
-  ServicesList,
-  ServicesItems,
+  PotentialСustomers,
+  Diva1,
+  Diva2,
+  Img,
 } from './MainStyled';
 
 const Main = () => {
@@ -26,8 +30,14 @@ const Main = () => {
         </Hero>
         <Services>
           <ServicesTitle>Послуги</ServicesTitle>
-          <ServicesList />
+          <TileList />
         </Services>
+        <PotentialСustomers>
+          <Diva2>
+            <p>kjsdjkfhkilsfkildjhskj</p>
+          </Diva2>
+          <Img src="/images/heroImg.jpg" alt="Корабель" />
+        </PotentialСustomers>
       </MainWrap>
     </Container>
   );
