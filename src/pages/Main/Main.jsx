@@ -3,14 +3,32 @@
 // import { AuthNav, UserNav, Nav } from '../Nav';
 // import MobileMenu from '../MobileMenu/MobileMenu';
 import Container from 'components/Container/Container';
-import { Wrap, HeroMainText } from './MainStyled';
+import {
+  MainWrap,
+  Hero,
+  HeroTitle,
+  HeroSubtitle,
+  Services,
+  ServicesTitle,
+  ServicesList,
+  ServicesItems,
+} from './MainStyled';
 
 const Main = () => {
   return (
     <Container>
-      <Wrap>
-        <HeroMainText>Швидко Професійно Не за всі гроші світу</HeroMainText>
-      </Wrap>
+      <MainWrap>
+        <Hero>
+          <HeroTitle>ШВИДКО ТА ПРОФЕСІЙНО</HeroTitle>
+          <HeroSubtitle>
+            Повний спектр послуг з митного оформлення юридичних та фізичних осіб
+          </HeroSubtitle>
+        </Hero>
+        <Services>
+          <ServicesTitle>Послуги</ServicesTitle>
+          <ServicesList />
+        </Services>
+      </MainWrap>
     </Container>
   );
 };

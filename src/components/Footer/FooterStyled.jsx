@@ -14,16 +14,16 @@ export const FooterWrap = styled.div`
     height: 75px;
     border: 0 solid transparent;
     border-left-width: 0px;
-    border-right-width: 440pxpx;
+    border-right-width: 430px;
     border-bottom: 30px solid #ffd400;
 
     @media screen and (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-      border-right-width: 738px;
+      border-right-width: 728px;
       border-bottom: 40px solid #ffd400;
     }
 
     @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-      border-right-width: 1250px;
+      border-right-width: 1240px;
     }
   }
 `;

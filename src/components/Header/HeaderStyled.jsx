@@ -5,6 +5,8 @@ export const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #ffd400;
+  padding-bottom: 5px;
   &:after {
     position: absolute;
     content: '';
@@ -12,17 +14,17 @@ export const HeaderWrapper = styled.div`
     width: 0;
     height: 75px;
     border: 0 solid transparent;
-    border-left-width: 440px;
+    border-left-width: 430px;
     border-right-width: 0px;
     border-top: 30px solid #ffd400;
 
     @media screen and (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-      border-left-width: 738px;
+      border-left-width: 728px;
       border-top: 40px solid #ffd400;
     }
 
     @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-      border-left-width: 1250px;
+      border-left-width: 1240px;
     }
   }
 `;
@@ -83,6 +85,7 @@ export const HeaderContacts = styled.ul`
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-right: 15px;
   }
 `;
 
