@@ -1,4 +1,9 @@
-import { TileListEl, TileItems } from './TileListStyled';
+import {
+  TileListEl,
+  TileItems,
+  TileItemsTitle,
+  TileItemsSubtitle,
+} from './TileListStyled';
 import { nanoid } from 'nanoid';
 
 const items = [
@@ -27,8 +32,8 @@ const items = [
 const TileList = () => {
   const elements = items.map(({ id, title, text }) => (
     <TileItems key={id}>
-      <h3>{title}</h3>
-      <p>{text}</p>
+      <TileItemsTitle>{title}</TileItemsTitle>
+      <TileItemsSubtitle>{text}</TileItemsSubtitle>
     </TileItems>
   ));
   return <TileListEl>{elements}</TileListEl>;

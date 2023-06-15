@@ -13,6 +13,7 @@ import {
   Services,
   ServicesTitle,
   PotentialСustomers,
+  PotentialСustomersTitle,
   Diva1,
   Diva2,
   Img,
@@ -33,10 +34,29 @@ const Main = () => {
           <TileList />
         </Services>
         <PotentialСustomers>
-          <Diva2>
-            <p>kjsdjkfhkilsfkildjhskj</p>
-          </Diva2>
-          <Img src="/images/heroImg.jpg" alt="Корабель" />
+          <PotentialСustomersTitle>Хто наші клієнти?</PotentialСustomersTitle>
+          <Diva1>
+            <Diva2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                ipsum dicta aspernatur fugiat ipsam laborum odit animi ipsa quam
+                nobis, suscipit, dolorem laudantium vero veniam voluptas facere
+                cupiditate! Assumenda, odio?
+              </p>
+            </Diva2>
+            <Img src="/images/heroImg.jpg" alt="Корабель" />
+          </Diva1>
+          <Diva1 className="rev">
+            <Diva2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                ipsum dicta aspernatur fugiat ipsam laborum odit animi ipsa quam
+                nobis, suscipit, dolorem laudantium vero veniam voluptas facere
+                cupiditate! Assumenda, odio?
+              </p>
+            </Diva2>
+            <Img src="/images/heroImg.jpg" alt="Корабель" />
+          </Diva1>
         </PotentialСustomers>
       </MainWrap>
     </Container>

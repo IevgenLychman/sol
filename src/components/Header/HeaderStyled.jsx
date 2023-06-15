@@ -7,6 +7,7 @@ export const HeaderWrapper = styled.div`
   justify-content: space-between;
   border-bottom: 1px solid #ffd400;
   padding-bottom: 5px;
+  margin-bottom: 10px;
   &:after {
     position: absolute;
     content: '';

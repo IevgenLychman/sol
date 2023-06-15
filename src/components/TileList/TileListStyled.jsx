@@ -13,6 +13,9 @@ export const TileListEl = styled.ul`
 `;
 
 export const TileItems = styled.li`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 10px;
   border: 1px solid #ffd400;
   background-color: light-grey;
@@ -20,4 +23,14 @@ export const TileItems = styled.li`
   width: 45%;
   min-height: 200px;
   box-shadow: ${({ theme }) => theme.boxShadows.main};
+`;
+export const TileItemsTitle = styled.h3`
+  margin-bottom: 20px;
+  font-family: ${({ theme }) => theme.fonts.main.medium};
+  font-size: ${({ theme }) => theme.fontSizes[3]};
+`;
+
+export const TileItemsSubtitle = styled.p`
+  font-family: ${({ theme }) => theme.fonts.main.regular};
+  font-size: ${({ theme }) => theme.fontSizes[3]};
 `;

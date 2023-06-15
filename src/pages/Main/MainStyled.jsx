@@ -21,9 +21,7 @@ export const Hero = styled.div`
 
   width: 100%;
   height: 500px;
-  margin: 10px 0 auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 110px 0 100px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -48,7 +46,7 @@ export const Services = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  padding-top: 38px;
+  padding-top: 40px;
 `;
 
 export const ServicesTitle = styled.h2`
@@ -59,18 +57,40 @@ export const ServicesTitle = styled.h2`
 
 export const PotentialСustomers = styled.div`
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  border: 3px solid #ffd400;
+  width: 100%;
+  padding: 40px 0;
+`;
+
+export const PotentialСustomersTitle = styled.h3`
+  font-family: ${({ theme }) => theme.fonts.main.medium};
+  font-size: ${({ theme }) => theme.fontSizes[3]};
+  margin-bottom: 20px;
+`;
+
+export const Diva1 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffd40057;
+  border-radius: 8px;
+  box-shadow: ${({ theme }) => theme.boxShadows.main};
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  &.rev {
+    flex-direction: row-reverse;
+  }
 `;
 
 export const Diva2 = styled.div`
-  border: 3px solid red;
   display: flex;
+  flex-direction: column;
+  &.rev {
+    flex-direction: row-reverse;
+  }
 `;
 
 export const Img = styled.img`
-  border: 3px solid green;
   background-color: grey;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -82,8 +102,8 @@ export const Img = styled.img`
   background-position: center;
   border-radius: 8px;
 
-  width: 200px;
-  height: 200px;
+  width: 800px;
+  height: 300px;
 
   display: flex;
   align-items: center;
